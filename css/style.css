@@ -1,0 +1,527 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    height: 100%;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    height: 100%;
+}
+
+/* banner starts */
+
+.navigation{
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header h2{
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: rgb(252,221,68);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0;
+    cursor: pointer;
+}
+.header h2:hover{
+    color: rgb(235, 122, 16);
+}
+.header ul{
+    float: right;
+    margin: 0;
+}
+.yellow{
+    background-color: rgb(252,221,68);
+    padding:35px 25px 20px 25px;
+    font-weight: 500;
+}
+.yellow a{
+    color: #000;
+}
+.header ul li{
+    float: left;
+    list-style: none;
+    padding:40px 30px 20px 30px;
+    font-weight: 500;
+    transition: .1s ease-in;
+}
+li:hover{
+    background-color: rgb(252, 221, 68);
+}
+a:hover{
+    color: #000;
+}
+
+.icon{
+    float: right;
+    display: none; 
+    margin: 14px 10px 0 0;
+    background-color: #000;
+    outline: none;
+}
+a{
+    color: rgb(124, 122, 122);
+    text-decoration: none;
+    font-weight: 500;
+}
+.fa{
+    font-size: 30px;
+    color: rgb(252, 221, 68);
+}
+.owl-carousel{
+     width: 100%;
+     height: 100vh;
+}
+
+.slide{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    background-attachment: scroll; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+ 
+
+}
+
+.slide-1{
+    background-image: url(../img/banner-1.jpg);
+   
+}
+.slide-2{
+    background-image: url(../img/banner-2.jpg);
+}
+.slide-3{
+    background-image: url(../img/banner-3.jpg);
+}
+/* .banner{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/banner-1.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+} */
+.banner-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top:30vh;
+    color: #fff;
+    z-index: 9;
+    
+}
+.banner-text h1{
+    font-size: 4.6rem;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+.banner-yellow{
+    color: rgb(252, 221, 68);
+}
+.banner-text h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+.banner-text button{
+    width: 180px;
+    height: 60px;
+    background-color:rgba(252, 221, 68, 0.39);;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    border: 2px solid #D2B731;
+    margin: 8px 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+   
+}
+.banner-text button:hover{
+    color: #000;
+    background-color:rgb(252, 221, 68);
+}
+
+/* three section */
+
+.three-section{
+    width: 100%;
+    background-color: #e5e5ef;
+}
+.three-center{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.three-center .box,.three-center .box1{
+
+    width: 29%;
+    margin: 0 2%;
+    position: relative;
+    top:-59px;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px #a9a9a9;
+    z-index: 2;
+}
+
+.three-center .box1 .left{
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+.three-center .box1 .right{
+    width: 50%;
+    float: right;
+    background-color: rgb(252, 221, 68);
+}
+.three-center .box1 .hotel{
+    width: 80%;
+    padding:10px 10px;
+    margin: 14px 0;
+    border: 1px solid rgb(206,200,200);
+    outline: none;
+}
+
+ .box1 .bottom{
+    width: 100%;
+    background-color: rgb(252, 221, 68);
+    padding:20px 0px;
+} 
+button{
+    width: 120px;
+    height: 40px;
+    background-color: #fde162;
+    color: #5C4905;
+    border:2px solid #fde162;
+    margin: 7px 0 5px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+button:hover{
+    background-color: #faeba6;
+}
+.bottom1{
+    width: 100%;
+    background-color: #28c469;
+    color: #fff;
+    padding:15px 0;
+    cursor: pointer;
+}
+
+.left1{
+    width: 50%;
+    float: left;
+}
+.left1 h3,.right1 h3,.left2 h3, .right2 h3{
+
+    font-weight: 100;
+
+}
+.left1 h3:hover,.right1 h3:hover,.left2 h3:hover, .right2 h3:hover{
+       font-weight: 700;
+}
+
+
+
+
+.right1{
+    width: 50%;
+    float: right;
+}
+.bottom2{
+    width: 100%;
+    background-color: #eb6659;
+    color: #fff;
+    padding:15px 0;
+    cursor: pointer;
+}
+.left2{
+    width: 50%;
+    float: left;
+}
+.right2{
+    width: 50%;
+    float: right;
+}
+.three-image{
+    width: 100%;
+}
+
+/* four section starts */
+
+.four-section{
+    width: 100%;
+    background-color: #e5e5ef;
+    padding-bottom: 50px;
+}
+
+.four-center{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding:50px 0;
+}
+.line-box{
+    width: 30%;
+    float: left;
+    padding:25px 20px;
+}
+.line-box hr{
+    height: 1px;
+    background-color: #000;
+    border: none;
+}
+.line-box-text{
+    width: 40%;
+    float: left;
+    padding:0 30px;
+}
+.line-box-text h1{
+    font-size: 2.4rem;
+    margin-top: 0;
+    font-weight: 100;
+}
+.four-center1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.four-box{
+    width: 22%;
+    float: left;
+    margin: 0 1.5%;
+    background-color: #fff;
+}
+.four-image{
+    width: 100%;
+}
+.four-box h4{
+    padding:15px 20px;
+    font-weight: 500;
+    
+}
+.four-box p{
+    padding:5px 20px;
+    font-weight: 500;
+    color: rgb(134, 131, 131);
+}
+.four-box hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgb(214, 209, 209);
+    margin-bottom: 0;
+}
+.three-icon{
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding:20px 0;
+    cursor: pointer;
+}
+.three-icon1{
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding:20px 0;
+    border-left:1px solid rgb(214, 209, 209);
+    border-right:1px solid rgb(214, 209, 209);
+    cursor: pointer;
+}
+.three-icon1 h5{
+    margin: 0;
+    color: rgb(104, 103, 103);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.three-fa{
+    font-size: 20px;
+    color: black;
+}
+
+.three-fa:hover{
+    color: rgb(252, 221, 68);
+}
+.three-icon1 h5:hover{
+    color: rgb(252, 221, 68);
+}
+.holiday-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:50px 0;
+    text-align: center;
+}
+
+/* bottom four */
+
+.bottom-four2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.bottom-left{
+    width: 47%;
+    float: left;
+    border: 1px solid rgb(184,181,181);
+    margin: 2% 1.5%;
+}
+.bottom-left .image{
+    width:45%;
+    float: left;
+}
+.bottom-image{
+    width: 100%;
+  
+}
+.bottom-left .text{
+
+    width: 55%;
+    float: right;
+}
+.text p{
+    padding: 20px 30px 5px 20px;
+}
+.text hr{
+    margin: 45px 0 0 0;
+    height: 1px;
+    background-color: #ccc9c9;
+    border: none;
+}
+
+.footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width:1199px){
+    .three-section{
+        padding: 10px;
+    }
+    .three-section .box1{
+         width: 96%;
+    }
+    .three-center .box{
+        width: 46%;
+        margin-top: 50px;
+    }
+    .bottom-left .text,.bottom-left .image{
+        width:100%;
+        text-align: center;
+    }
+    .four-box{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:999px){
+       
+         .four-box{
+             width: 45%;
+             margin: 2.5% 2.5%;
+         }
+         .line-box-text{
+             padding: 0;
+         }
+}
+
+@media only screen and (max-width:768px){
+    .navigation ul{
+        display: none;
+        position: absolute;
+        top: 75px;
+        margin-left: 20px;
+        background-color: #000;
+        opacity: 0.7;
+        padding-left: 0;
+    }
+
+    .icon{
+        display: block;
+        width: 50px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    a{
+        color: #fff;
+    }
+    .banner-text h1{
+
+        font-size: 3.5rem;
+
+    }
+    .line-box-text h1{
+        font-size: 2.2rem;
+    }
+    .header ul li{
+        float: left;
+        text-align: center;
+        padding:20px 20px;
+    }
+    .three-center .box1{
+        position: relative;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+      .banner-text h1{
+          font-size: 2.7rem;
+
+      }
+      .three-center .box{
+          width: 95%;
+      }
+      .line-box{
+          width: 20%;
+      }
+      .line-box-text h1{
+          font-size: 1.9rem;
+      }
+      .line-box-text{
+          width: 60%;
+      }
+      .four-center{
+          padding:20px 0;
+      }
+      .four-box{
+          width: 90%;
+          margin: 5%;
+      }
+      .holiday-text{
+          padding:0 20px;
+          line-height: 25px;
+      }
+      .bottom-left{
+          width: 90%;
+          margin: 5%;
+      }
+
+}
+
